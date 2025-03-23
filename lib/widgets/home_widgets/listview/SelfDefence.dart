@@ -28,7 +28,7 @@ class SelfDefence extends StatelessWidget {
                   child: Icon(
                     Icons.self_improvement, // Self Defence-related icon
                     size: 32, // Match the icon size
-                    color: Colors.black, // Match the icon color
+                    color: Colors.pink, // Match the icon color
                   ),
                 ),
               ),

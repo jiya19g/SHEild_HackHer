@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:title_proj/widgets/home_widgets/SOSButton/SOSButton.dart';
 import 'package:title_proj/widgets/home_widgets/emergencies/FireBrigadeEmergency.dart';
 import 'package:title_proj/widgets/home_widgets/emergencies/AmbulanceEmergency.dart';
 import 'package:title_proj/widgets/home_widgets/emergencies/ArmyEmergency.dart';
 import 'package:title_proj/widgets/home_widgets/emergencies/PoliceEmergency.dart';
+import 'package:title_proj/widgets/sos_button.dart';
 
 class Emergency extends StatelessWidget {
   final Future<void> Function() onSosPressed;
@@ -24,15 +24,17 @@ class Emergency extends StatelessWidget {
             child: ListView(
               physics: const BouncingScrollPhysics(),
               scrollDirection: Axis.horizontal,
+              
               children: [
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                  child: SOSButton(onPressed: onSosPressed), // ✅ Pass function correctly
+                ),
                 const PoliceEmergency(),
                 const AmbulanceEmergency(),
                 const FireBrigadeEmergency(),
                 const ArmyEmergency(),
-                Padding(
-                  padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                  child: SOSButton(onPressed: onSosPressed),
-                ),
+                
               ],
             ),
           ),

@@ -23,9 +23,9 @@ class _SafeHomeState extends State<SafeHome> {
 
     // Initialize Twilio with your Twilio credentials
     twilioFlutter = TwilioFlutter(
-      accountSid: 'your_account_sid',  // Replace with your Account SID from Twilio
-      authToken: 'your_auth_token',    // Replace with your Auth Token from Twilio
-      twilioNumber: 'your_twilio_number', // Replace with your Twilio phone number
+      accountSid: '',  // Replace with your Account SID from Twilio
+      authToken: '',    // Replace with your Auth Token from Twilio
+      twilioNumber: '', // Replace with your Twilio phone number
     );
   }
 
@@ -44,8 +44,12 @@ class _SafeHomeState extends State<SafeHome> {
         toNumber: phoneNumber,  // The recipient's phone number
         messageBody: message,   // The message to send
       );
+      // Debugging: Print the response from Twilio API
+      print("Twilio response: $messageSent");
       Fluttertoast.showToast(msg: "Message sent: $messageSent");
     } catch (error) {
+      // Handle failure and show toast for failure
+      print("Failed to send message: $error");
       Fluttertoast.showToast(msg: "Message failed: $error");
     }
   }
@@ -69,7 +73,7 @@ class _SafeHomeState extends State<SafeHome> {
         _currentPosition = position;
       });
     }).catchError((e) {
-      Fluttertoast.showToast(msg: "Failed to get location");
+      Fluttertoast.showToast(msg: "Failed to get location: $e");
     });
   }
 
@@ -109,7 +113,8 @@ class _SafeHomeState extends State<SafeHome> {
                     if (_currentPosition != null) {
                       String message =
                           "Emergency! My location is: Lat: ${_currentPosition?.latitude}, Long: ${_currentPosition?.longitude}";
-                      _sendSms("8448018504", message);  // Replace with the recipient's phone number
+                      print("Sending message: $message"); // Debugging: Print the message
+                      _sendSms("", message);  // Replace with the recipient's phone number
                     } else {
                       Fluttertoast.showToast(msg: "Location not available yet");
                     }

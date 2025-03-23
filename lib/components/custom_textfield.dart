@@ -8,8 +8,8 @@ class CustomTextField extends StatelessWidget {
   final TextEditingController? controller;
   final TextInputType? keyboardType;
   final String? Function(String?)? validator;
-  final Function(String?)? onSaved; // ✅ Added this
-  final int? maxLines;  // Added this
+  final Function(String?)? onSaved;
+  final int? maxLines;  // Added this line to handle multi-line support
 
   const CustomTextField({
     Key? key,
@@ -20,8 +20,8 @@ class CustomTextField extends StatelessWidget {
     this.controller,
     this.keyboardType,
     this.validator,
-    this.onSaved, // ✅ Added this
-    this.maxLines,  // Added this
+    this.onSaved,
+    this.maxLines = 1,  // Default to 1 line for password fields
   }) : super(key: key);
 
   @override
@@ -30,6 +30,7 @@ class CustomTextField extends StatelessWidget {
       controller: controller,
       obscureText: isPassword,
       keyboardType: keyboardType,
+      maxLines: maxLines,  // Handle multi-line support
       decoration: InputDecoration(
         hintText: hintText,
         prefixIcon: prefix,
@@ -39,8 +40,7 @@ class CustomTextField extends StatelessWidget {
         ),
       ),
       validator: validator,
-      onSaved: onSaved, // ✅ Added this
-      maxLines: maxLines,  // Pass maxLines to TextFormField
+      onSaved: onSaved,
     );
   }
 }

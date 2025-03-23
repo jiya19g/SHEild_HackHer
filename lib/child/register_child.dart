@@ -1,5 +1,5 @@
-import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:title_proj/child/LoginScreen.dart';
 import 'package:title_proj/components/PrimaryButton.dart';
@@ -172,6 +172,25 @@ class _RegisterChildScreenState extends State<RegisterChildScreen> {
                         }
                         return null;
                       },
+                      maxLines: 1, // Set maxLines to 1 for password
+                    ),
+                    SizedBox(height: 10),
+
+                    // Confirm Password Field
+                    CustomTextField(
+                      controller: confirmPasswordController,
+                      hintText: 'Confirm Password',
+                      isPassword: !isConfirmPasswordVisible,
+                      prefix: Icon(Icons.lock, color: Colors.grey),
+                      validator: (value) {
+                        if (value == null || value.isEmpty) {
+                          return 'Please confirm your password';
+                        } else if (value != passwordController.text) {
+                          return 'Passwords do not match';
+                        }
+                        return null;
+                      },
+                      maxLines: 1, // Set maxLines to 1 for confirm password
                     ),
                     SizedBox(height: 20),
 

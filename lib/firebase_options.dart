@@ -41,46 +41,46 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBmSo80goNaJ3KC0ZHvDv2EZgOZbnlRYww',
-    appId: '1:57711808952:web:82b9c4d4b1481d83a6ff4d',
-    messagingSenderId: '57711808952',
-    projectId: 'sheild-d4bd4',
-    authDomain: 'sheild-d4bd4.firebaseapp.com',
-    storageBucket: 'sheild-d4bd4.firebasestorage.app',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    authDomain: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCjLTU0DWp2V2HEBxWJMAtoNAtNAmu7WJs',
-    appId: '1:57711808952:android:4e5f6356f0215b80a6ff4d',
-    messagingSenderId: '57711808952',
-    projectId: 'sheild-d4bd4',
-    storageBucket: 'sheild-d4bd4.firebasestorage.app',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyC64Hx648p65KVBLj1CaqBjXwGfnfSzZcQ',
-    appId: '1:57711808952:ios:2f8636619adabc26a6ff4d',
-    messagingSenderId: '57711808952',
-    projectId: 'sheild-d4bd4',
-    storageBucket: 'sheild-d4bd4.firebasestorage.app',
-    iosBundleId: 'com.example.titleProj',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
+    iosBundleId: '',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyC64Hx648p65KVBLj1CaqBjXwGfnfSzZcQ',
-    appId: '1:57711808952:ios:2f8636619adabc26a6ff4d',
-    messagingSenderId: '57711808952',
-    projectId: 'sheild-d4bd4',
-    storageBucket: 'sheild-d4bd4.firebasestorage.app',
-    iosBundleId: 'com.example.titleProj',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    storageBucket: '',
+    iosBundleId: '',
   );
 
   static const FirebaseOptions windows = FirebaseOptions(
-    apiKey: 'AIzaSyBmSo80goNaJ3KC0ZHvDv2EZgOZbnlRYww',
-    appId: '1:57711808952:web:c2ba0401f0419246a6ff4d',
-    messagingSenderId: '57711808952',
-    projectId: 'sheild-d4bd4',
-    authDomain: 'sheild-d4bd4.firebaseapp.com',
-    storageBucket: 'sheild-d4bd4.firebasestorage.app',
+    apiKey: '',
+    appId: '',
+    messagingSenderId: '',
+    projectId: '',
+    authDomain: '',
+    storageBucket: '',
   );
 }

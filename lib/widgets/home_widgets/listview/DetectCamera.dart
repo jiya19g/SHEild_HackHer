@@ -27,7 +27,7 @@ class DetectCameras extends StatelessWidget {
                   child: Icon(
                     Icons.videocam, // Camera-related icon
                     size: 32,
-                    color: Colors.black,
+                    color: Colors.pink,
                   ),
                 ),
               ),

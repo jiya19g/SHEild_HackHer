@@ -28,7 +28,7 @@ class RiskAnalysis extends StatelessWidget {
                   child: Icon(
                     Icons.warning_amber_rounded, // Risk-related icon
                     size: 32,
-                    color: Colors.black,
+                    color: Colors.pink,
                   ),
                 ),
               ),
