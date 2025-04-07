@@ -17,7 +17,7 @@
 - **Nearby Safe Locations**: Displays hospitals, police stations, etc.
 
 ### 👀 Surveillance Protection
-- **Hidden Camera Detection**: AI tool to detect suspicious hidden cameras in changing rooms, hotels, etc.
+- **Hidden Camera Detection**: Tool to detect suspicious hidden cameras in changing rooms, hotels, etc.
 
 ### 📚 Awareness & Empowerment
 - **Self-Defense Tutorials**: Step-by-step videos and guides.
@@ -38,7 +38,7 @@
 - **Database**: Cloud Firestore
 - **Location Services**: GPS, Geofencing
 - **Offline Alerts**: SMS Integration (via platform APIs)
-- **AI & Prediction**: Camera detection and risk analytics modules
+- **AI & Prediction**: Risk analytics modules
 
 ---
 
