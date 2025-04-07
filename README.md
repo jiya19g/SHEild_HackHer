@@ -1,48 +1,64 @@
-# SHEield
-# Women Safety Application
+# SHEild – Women Safety & Support System 🚨🛡️
 
-## Introduction
+**SHEild** is a proactive, real-time safety and emergency support app built to protect and empower women in public spaces. Unlike most safety apps that react *after* an incident, SHEild is designed to *prevent* threats with smart risk assessment, offline emergency features, AI-powered surveillance protection, and self-defense awareness.
 
-The **Women Safety Application** is a mobile app designed to provide safety features to women, ensuring their security in critical situations. The app includes features such as an emergency alert system, location tracking, and the ability to send instant alerts to friends or family members in case of distress.
+---
 
-## Features
+## 🚀 Key Features
 
-- **SOS Alert**: Sends an emergency message with location details to pre-selected contacts.
-- **Real-time Location Tracking**: Track the user’s location and share it with trusted contacts.
-- **Quick Emergency Call**: Call emergency services directly with a single tap.
-- **Geo-fencing**: Set safe zones, and receive alerts when the user exits these zones.
-- **Voice Command**: Activate SOS alerts using voice commands.
-- **Chat Support**: Get live assistance from support teams or friends in case of an emergency.
+### 🔴 Emergency & Offline Support
+- **Shake-to-Alert**: Shake phone to instantly send SOS with location.
+- **SOS Button**: Tap to notify guardians and emergency contacts.
+- **Offline Mode**: Send SMS alerts even without internet.
 
-## Tech Stack
+### 🧠 Proactive Safety & Risk Assessment
+- **Risk Analysis**: AI-driven identification of high-risk areas using historical and crowdsourced data.
+- **Geofencing**: Alerts if user exits or enters a predefined safe zone.
+- **Nearby Safe Locations**: Displays hospitals, police stations, etc.
 
-- **Flutter**: For building the cross-platform mobile app.
-- **Firebase**: For user authentication, real-time database, and cloud functions.
-- **Google Maps API**: For location tracking and geo-fencing features.
-- **Twilio**: For sending SMS alerts (optional based on project requirements).
-- **Speech-to-Text**: For voice command integration.
+### 👀 Surveillance Protection
+- **Hidden Camera Detection**: AI tool to detect suspicious hidden cameras in changing rooms, hotels, etc.
 
-## Setup Instructions
+### 📚 Awareness & Empowerment
+- **Self-Defense Tutorials**: Step-by-step videos and guides.
+- **News & Crime Alerts**: Live updates on local safety threats.
+- **Legal Rights Info**: Know your rights, laws, and emergency helplines.
 
-### Prerequisites
+### 👥 User Management & Secure Chat
+- **User Roles**: User, Guardian, and Admin roles for structured management.
+- **Encrypted Chat**: Communicate securely with guardians or emergency contacts.
+- **Custom Emergency Contacts**: Add and manage trusted contacts easily.
 
-Before setting up the project, make sure you have the following installed on your machine:
-- [Flutter](https://flutter.dev/docs/get-started/install) (with Flutter SDK)
-- [Dart](https://dart.dev/get-dart)
-- [Android Studio](https://developer.android.com/studio) or [Visual Studio Code](https://code.visualstudio.com/) with Flutter plugin installed
-- [Firebase](https://firebase.google.com/) account for configuring the backend
-- Google Maps API key (if using location tracking)
+---
 
+## 📱 Tech Stack
 
-## Getting Started
+- **Frontend**: Flutter (Dart)
+- **Backend & Auth**: Firebase
+- **Database**: Cloud Firestore
+- **Location Services**: GPS, Geofencing
+- **Offline Alerts**: SMS Integration (via platform APIs)
+- **AI & Prediction**: Camera detection and risk analytics modules
 
-This project is a starting point for a Flutter application.
+---
 
-A few resources to get you started if this is your first Flutter project:
+## 📊 Why SHEild?
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+> 🔐 Most apps are **reactive** – SHEild is **preventive**.  
+> 🌐 Many apps fail **offline** – SHEild **works anytime**.  
+> 🔍 Other apps miss **hidden surveillance** – SHEild **detects it**.  
+> 🧘‍♀️ Others just alert – SHEild **educates & empowers**.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+---
+
+## 📈 Market Insight
+
+- 💰 **Market Size**: $1.7 Billion (2022) with 10% CAGR till 2030  
+- 🚨 **Safety Stats**:  
+  - Only **51%** of women in India feel safe in public.  
+  - India ranks **128/177** in global Women's Safety Index.  
+  - **Delhi** reports the highest crime rate against women.  
+
+---
+-When women are safe, communities thrive. When women are empowered, societies progress.
+-Join the SHEild mission. Be the change. Be the protection.
